@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Not Pinteresting",
+    "version": "0.1.0",
+    "description": "Hides Pinterest in google searches",
+    "background": {
+      "scripts":["background.js"]
+    },
+    "content_scripts": [{
+      "css": ["styles.css"],
+      "matches": ["https://google.com/*", "https://www.google.com/*"]
+    }],
+    "permissions": [
+      "tabs"
+    ]
+  }
